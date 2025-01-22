@@ -17,3 +17,14 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.table {
+    width:70rem;
+    margin:auto;
+}
+.finalCard{
+    display:flex;
+    flex-direction:column;
+}
+#finalCard {
+    margin-top:3rem;
+}
