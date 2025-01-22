@@ -1,0 +1,19 @@
+.card{
+    width:70rem;
+    margin:auto;
+}
+
+#idNumber{
+    width: 14rem !important;
+}
+.input-group{
+    margin:1rem;
+}
+.userInfo{
+    width:30rem
+}
+.card-body{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

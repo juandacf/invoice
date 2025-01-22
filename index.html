@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <div class="card" id="card">
+    <div class="card-header">
+      Factura #
+    </div>
+    <form action="submit">
+      <div class="card-body">
+        <div class="input-group userInfo" id="idNumber">
+          <span class="input-group-text">Número ID</span>
+          <input class="form-control" aria-label="With textarea"></input>
+        </div>
+        <div class="input-group userInfo">
+          <span class="input-group-text"> Nombres</span>
+          <input class="form-control" aria-label="With textarea"> </input>
+        </div>
+        <div class="input-group userInfo">
+          <span class="input-group-text"> Apellidos</span>
+          <input class="form-control" aria-label="With textarea"> </input>
+        </div>
+        <div class="input-group userInfo">
+          <span class="input-group-text"> Dirección</span>
+          <input class="form-control" aria-label="With textarea"> </input>
+        </div>
+        <div class="input-group userInfo">
+          <span class="input-group-text"> E-mail</span>
+          <input class="form-control" aria-label="With textarea"> </input>
+        </div>
+
+      </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="input-group userInfo">
+        <span class="input-group-text"> Codigo Producto</span>
+        <input class="form-control" aria-label="With textarea"> </input>
+      </div>
+      <div class="input-group userInfo">
+        <span class="input-group-text"> Nombre Producto</span>
+        <input class="form-control" aria-label="With textarea"> </input>
+      </div>
+      <div class="input-group userInfo">
+        <span class="input-group-text"> Valor Unidad</span>
+        <input class="form-control" aria-label="With textarea"> </input>
+      </div>
+      <div class="input-group userInfo">
+        <span class="input-group-text"> Cantidad</span>
+        <input class="form-control" aria-label="With textarea"> </input>
+      </div>
+    </div>
+    <input type="submit" class="btn btn-success" id="submitButton">
+  </form>
+  </div>
+  </div>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
