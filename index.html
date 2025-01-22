@@ -14,27 +14,27 @@
     <div class="card-header">
       Factura #
     </div>
-    <form action="submit">
+    <form action="submit" id="form">
       <div class="card-body">
         <div class="input-group userInfo" id="idNumber">
           <span class="input-group-text">Número ID</span>
-          <input class="form-control" aria-label="With textarea"></input>
+          <input class="form-control" aria-label="With textarea" name="personID"></input>
         </div>
         <div class="input-group userInfo">
-          <span class="input-group-text"> Nombres</span>
-          <input class="form-control" aria-label="With textarea"> </input>
+          <span class="input-group-text" > Nombres</span>
+          <input class="form-control" aria-label="With textarea" name="personName"> </input>
         </div>
         <div class="input-group userInfo">
           <span class="input-group-text"> Apellidos</span>
-          <input class="form-control" aria-label="With textarea"> </input>
+          <input class="form-control" aria-label="With textarea" name="personLastname"> </input>
         </div>
         <div class="input-group userInfo">
           <span class="input-group-text"> Dirección</span>
-          <input class="form-control" aria-label="With textarea"> </input>
+          <input class="form-control" aria-label="With textarea" name="personAddress"> </input>
         </div>
         <div class="input-group userInfo">
           <span class="input-group-text"> E-mail</span>
-          <input class="form-control" aria-label="With textarea"> </input>
+          <input class="form-control" aria-label="With textarea" name="personEmail"> </input>
         </div>
 
       </div>
@@ -43,19 +43,19 @@
     <div class="card-body">
       <div class="input-group userInfo">
         <span class="input-group-text"> Codigo Producto</span>
-        <input class="form-control" aria-label="With textarea"> </input>
+        <input class="form-control" aria-label="With textarea" name="productCode"> </input>
       </div>
       <div class="input-group userInfo">
         <span class="input-group-text"> Nombre Producto</span>
-        <input class="form-control" aria-label="With textarea"> </input>
+        <input class="form-control" aria-label="With textarea" name="productName"> </input>
       </div>
       <div class="input-group userInfo">
         <span class="input-group-text"> Valor Unidad</span>
-        <input class="form-control" aria-label="With textarea"> </input>
+        <input class="form-control" aria-label="With textarea" type="number" name="unitValue"> </input>
       </div>
       <div class="input-group userInfo">
         <span class="input-group-text"> Cantidad</span>
-        <input class="form-control" aria-label="With textarea"> </input>
+        <input class="form-control" type="number" aria-label="With textarea" name="quantity"> </input>
       </div>
     </div>
     <input type="submit" class="btn btn-success" id="submitButton">
@@ -63,15 +63,16 @@
   </div>
   </div>
   </div>
-  <table class=" table table-info">
-    <thead>
+  <table class=" table table-info" id="productTable">
+    <tr>
       <th scope="col">Cod</th>
       <th scope="col">Nombre</th>
       <th scope="col">V/unit</th>
       <th scope="col">Cantidad</th>
       <th scope="col">Subtotal</th>
       <th scope="col">Delete</th>
-    </thead>
+    </tr>
+    
   </table>
 
   <div class="card" style="width: 18rem;" id="finalCard">
