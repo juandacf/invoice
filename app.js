@@ -1,12 +1,13 @@
 const mainContainer = {}
 
-function addProduct(products){
+function addProduct(products, infoContainer){
         const myTable = document.getElementById("productTable");
         const subTotal = products.quantity * products.unitValue;
         const elementClass = new Date().getMilliseconds().toString(16)
         const newTableElement = document.createElement('tr');
         const Iva = document.getElementById("iva");
         const finalAmount = document.getElementById("finalAmount");
+        const payButton = document.getElementById("payButton");
 
         newTableElement.classList.add(elementClass)
         newTableElement.innerHTML = /*html*/`
@@ -44,7 +45,7 @@ const myForm = document.getElementById("form");
 myForm.addEventListener("submit", async(e)=>{
     e.preventDefault();
     let data= Object.fromEntries(new FormData(e.target));
-    addProduct(data);
+    addProduct(data, mainContainer);
 })
 
 
