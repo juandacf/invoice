@@ -88,14 +88,14 @@ myForm.addEventListener("submit", async(e)=>{
         'personName': data.personName
     }
     Object.assign(mainContainer[0][receiptID].header, personalInfo)
-    
-    const payButton = document.getElementById("payButton")
-    payButton.addEventListener("click", ()=>{
-        const finalReceipt = JSON.stringify(mainContainer);
-        window.alert(`La información final del recibo es: ${finalReceipt}`)
-        console.log(finalReceipt)
-        location.reload()
-    })
+})
+
+const payButton = document.getElementById("payButton")
+payButton.addEventListener("click", ()=>{
+    const finalReceipt = JSON.stringify(mainContainer);
+    window.alert(`La información final del recibo es: ${finalReceipt}`)
+    console.log(finalReceipt)
+    location.reload()
 })
     
 
