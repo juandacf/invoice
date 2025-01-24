@@ -38,3 +38,6 @@
 .deleteButton:hover{
     cursor: grab;
 }
+#submitButton {
+    width:auto !important;
+}
